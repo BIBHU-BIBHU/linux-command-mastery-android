@@ -1,8 +1,12 @@
-import { useLocation } from "react-router-dom";
+
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Terminal } from "lucide-react";
 
 const NotFound = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.error(
@@ -12,14 +16,22 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-50">
+      <Terminal className="h-16 w-16 text-terminal-green mb-4" />
+      <h1 className="text-4xl font-bold mb-2 font-mono">404</h1>
+      <p className="text-xl text-gray-600 mb-6 text-center">
+        Command Not Found: {location.pathname}
+      </p>
+      <div className="bg-terminal-dark text-terminal-green p-4 rounded-md font-mono mb-6 max-w-sm w-full">
+        <p>$ cd {location.pathname}</p>
+        <p className="text-red-400">bash: cd: {location.pathname}: No such file or directory</p>
       </div>
+      <Button 
+        onClick={() => navigate("/")}
+        className="bg-terminal-dark hover:bg-gray-800 text-white"
+      >
+        Return to Home
+      </Button>
     </div>
   );
 };
