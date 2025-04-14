@@ -91,15 +91,15 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'cd Documents',
-        description: 'Change to the Documents directory',
+        description: 'Change to the Documents directory'
       },
       {
         command: 'cd ..',
-        description: 'Move up one directory level',
+        description: 'Move up one directory level'
       },
       {
         command: 'cd ~',
-        description: 'Go to the home directory',
+        description: 'Go to the home directory'
       }
     ],
     tips: [
@@ -137,11 +137,11 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'mkdir Projects',
-        description: 'Create a directory named Projects',
+        description: 'Create a directory named Projects'
       },
       {
         command: 'mkdir -p Projects/Web/HTML',
-        description: 'Create nested directories including parents',
+        description: 'Create nested directories including parents'
       }
     ],
     tips: [
@@ -184,15 +184,15 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'rm file.txt',
-        description: 'Delete a single file',
+        description: 'Delete a single file'
       },
       {
         command: 'rm -r directory',
-        description: 'Delete a directory and its contents recursively',
+        description: 'Delete a directory and its contents recursively'
       },
       {
         command: 'rm -i file.txt',
-        description: 'Ask for confirmation before deleting',
+        description: 'Ask for confirmation before deleting'
       }
     ],
     tips: [
@@ -211,15 +211,15 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'cp file.txt backup.txt',
-        description: 'Copy a file to a new file',
+        description: 'Copy a file to a new file'
       },
       {
         command: 'cp file.txt /home/user/Documents/',
-        description: 'Copy a file to another directory',
+        description: 'Copy a file to another directory'
       },
       {
         command: 'cp -r Documents/ Backup/',
-        description: 'Copy a directory and its contents recursively',
+        description: 'Copy a directory and its contents recursively'
       }
     ],
     tips: [
@@ -238,15 +238,15 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'mv file.txt newname.txt',
-        description: 'Rename a file',
+        description: 'Rename a file'
       },
       {
         command: 'mv file.txt /home/user/Documents/',
-        description: 'Move a file to another directory',
+        description: 'Move a file to another directory'
       },
       {
         command: 'mv -i old.txt new.txt',
-        description: 'Move with confirmation if overwriting',
+        description: 'Move with confirmation if overwriting'
       }
     ],
     tips: [
@@ -265,15 +265,15 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'touch newfile.txt',
-        description: 'Create a new empty file',
+        description: 'Create a new empty file'
       },
       {
         command: 'touch -a file.txt',
-        description: 'Update only the access time',
+        description: 'Update only the access time'
       },
       {
         command: 'touch file1.txt file2.txt file3.txt',
-        description: 'Create multiple files at once',
+        description: 'Create multiple files at once'
       }
     ],
     tips: [
@@ -292,11 +292,11 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'less file.txt',
-        description: 'View a text file with scrolling capabilities',
+        description: 'View a text file with scrolling capabilities'
       },
       {
         command: 'less -N file.txt',
-        description: 'Show line numbers while viewing file',
+        description: 'Show line numbers while viewing file'
       }
     ],
     tips: [
@@ -350,7 +350,7 @@ export const beginnerCommands: Command[] = [
       },
       {
         command: 'tail -f log.txt',
-        description: 'Follow the file as it grows (useful for logs)',
+        description: 'Follow the file as it grows (useful for logs)'
       }
     ],
     tips: [
@@ -369,15 +369,15 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'chmod 755 script.sh',
-        description: 'Make a script executable (rwx for owner, rx for others)',
+        description: 'Make a script executable (rwx for owner, rx for others)'
       },
       {
         command: 'chmod +x script.sh',
-        description: 'Add execute permission for all users',
+        description: 'Add execute permission for all users'
       },
       {
         command: 'chmod -R 644 directory/',
-        description: 'Recursively set permissions on all files in a directory',
+        description: 'Recursively set permissions on all files in a directory'
       }
     ],
     tips: [
@@ -426,11 +426,11 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'man ls',
-        description: 'Display the manual page for the ls command',
+        description: 'Display the manual page for the ls command'
       },
       {
         command: 'man -k search_term',
-        description: 'Search manual pages for a specific term',
+        description: 'Search manual pages for a specific term'
       }
     ],
     tips: [
@@ -459,7 +459,7 @@ export const beginnerCommands: Command[] = [
       },
       {
         command: '!23',
-        description: 'Re-execute command number 23 from history',
+        description: 'Re-execute command number 23 from history'
       }
     ],
     tips: [
@@ -478,7 +478,7 @@ export const beginnerCommands: Command[] = [
     examples: [
       {
         command: 'clear',
-        description: 'Clear the entire terminal screen',
+        description: 'Clear the entire terminal screen'
       }
     ],
     tips: [
@@ -581,11 +581,11 @@ export const intermediateCommands: Command[] = [
     examples: [
       {
         command: 'kill 1234',
-        description: 'Terminate process with PID 1234 (sends SIGTERM)',
+        description: 'Terminate process with PID 1234 (sends SIGTERM)'
       },
       {
         command: 'kill -9 1234',
-        description: 'Force terminate process with PID 1234 (SIGKILL)',
+        description: 'Force terminate process with PID 1234 (SIGKILL)'
       },
       {
         command: 'kill -l',
@@ -609,11 +609,11 @@ export const intermediateCommands: Command[] = [
     examples: [
       {
         command: 'top',
-        description: 'Display a dynamic real-time view of running processes',
+        description: 'Display a dynamic real-time view of running processes'
       },
       {
         command: 'top -u username',
-        description: 'Display only processes owned by a specific user',
+        description: 'Display only processes owned by a specific user'
       }
     ],
     tips: [
@@ -683,11 +683,11 @@ export const intermediateCommands: Command[] = [
     examples: [
       {
         command: 'tar -czvf archive.tar.gz directory/',
-        description: 'Create a compressed tar archive of a directory',
+        description: 'Create a compressed tar archive of a directory'
       },
       {
         command: 'tar -xzvf archive.tar.gz',
-        description: 'Extract a compressed tar archive',
+        description: 'Extract a compressed tar archive'
       },
       {
         command: 'tar -tzvf archive.tar.gz',
@@ -716,7 +716,7 @@ export const intermediateCommands: Command[] = [
       },
       {
         command: 'curl -o file.html https://example.com',
-        description: 'Save the output to a file',
+        description: 'Save the output to a file'
       },
       {
         command: 'curl -I https://example.com',
@@ -740,15 +740,15 @@ export const intermediateCommands: Command[] = [
     examples: [
       {
         command: 'wget https://example.com/file.zip',
-        description: 'Download a file',
+        description: 'Download a file'
       },
       {
         command: 'wget -r -np -k https://example.com/',
-        description: 'Recursively download a website',
+        description: 'Recursively download a website'
       },
       {
         command: 'wget -c https://example.com/largefile.iso',
-        description: 'Continue an interrupted download',
+        description: 'Continue an interrupted download'
       }
     ],
     tips: [
@@ -767,15 +767,15 @@ export const intermediateCommands: Command[] = [
     examples: [
       {
         command: 'ssh user@server.example.com',
-        description: 'Connect to a remote server',
+        description: 'Connect to a remote server'
       },
       {
         command: 'ssh -p 2222 user@server.example.com',
-        description: 'Connect using a specific port',
+        description: 'Connect using a specific port'
       },
       {
         command: 'ssh user@server.example.com "ls -la"',
-        description: 'Execute a command on a remote server without logging in',
+        description: 'Execute a command on a remote server without logging in'
       }
     ],
     tips: [
@@ -794,15 +794,15 @@ export const intermediateCommands: Command[] = [
     examples: [
       {
         command: 'scp file.txt user@server:~/documents/',
-        description: 'Copy a local file to a remote server',
+        description: 'Copy a local file to a remote server'
       },
       {
         command: 'scp user@server:~/file.txt /local/directory/',
-        description: 'Copy a remote file to the local machine',
+        description: 'Copy a remote file to the local machine'
       },
       {
         command: 'scp -r directory/ user@server:~/backups/',
-        description: 'Copy an entire directory to a remote server',
+        description: 'Copy an entire directory to a remote server'
       }
     ],
     tips: [
@@ -821,15 +821,15 @@ export const intermediateCommands: Command[] = [
     examples: [
       {
         command: 'rsync -av source/ destination/',
-        description: 'Sync directories, preserving attributes',
+        description: 'Sync directories, preserving attributes'
       },
       {
         command: 'rsync -avz --progress source/ user@host:destination/',
-        description: 'Sync to remote server with compression and progress display',
+        description: 'Sync to remote server with compression and progress display'
       },
       {
         command: 'rsync -av --delete source/ destination/',
-        description: 'Sync directories and delete files in destination that are not in source',
+        description: 'Sync directories and delete files in destination that are not in source'
       }
     ],
     tips: [
@@ -853,11 +853,11 @@ export const intermediateCommands: Command[] = [
       },
       {
         command: 'crontab -e',
-        description: 'Edit current user\'s cron jobs',
+        description: 'Edit current user\'s cron jobs'
       },
       {
         command: '0 2 * * * /bin/sh backup.sh',
-        description: 'Crontab entry to run backup.sh at 2 AM daily',
+        description: 'Crontab entry to run backup.sh at 2 AM daily'
       }
     ],
     tips: [
@@ -881,11 +881,11 @@ export const intermediateCommands: Command[] = [
       },
       {
         command: 'sudo systemctl restart apache2',
-        description: 'Restart a service',
+        description: 'Restart a service'
       },
       {
         command: 'sudo systemctl enable apache2',
-        description: 'Enable a service to start at boot',
+        description: 'Enable a service to start at boot'
       }
     ],
     tips: [
@@ -904,15 +904,15 @@ export const intermediateCommands: Command[] = [
     examples: [
       {
         command: 'journalctl',
-        description: 'Show all collected log messages',
+        description: 'Show all collected log messages'
       },
       {
         command: 'journalctl -u apache2',
-        description: 'Show logs from a specific service',
+        description: 'Show logs from a specific service'
       },
       {
         command: 'journalctl --since="2025-04-14" --until="2025-04-15"',
-        description: 'Show logs from a specific time period',
+        description: 'Show logs from a specific time period'
       }
     ],
     tips: [
@@ -936,11 +936,11 @@ export const intermediateCommands: Command[] = [
       },
       {
         command: 'netstat -anp',
-        description: 'Show all connections with processes (numeric)',
+        description: 'Show all connections with processes (numeric)'
       },
       {
         command: 'netstat -r',
-        description: 'Show routing table',
+        description: 'Show routing table'
       }
     ],
     tips: [
@@ -1023,7 +1023,7 @@ export const advancedCommands: Command[] = [
       },
       {
         command: 'sudo tcpdump -n -i eth0 "tcp port 22"',
-        description: 'Capture SSH traffic without DNS resolution',
+        description: 'Capture SSH traffic without DNS resolution'
       }
     ],
     tips: [
@@ -1048,11 +1048,11 @@ export const advancedCommands: Command[] = [
       },
       {
         command: 'strace -p 1234',
-        description: 'Attach to running process with PID 1234',
+        description: 'Attach to running process with PID 1234'
       },
       {
         command: 'strace -e open,read ls',
-        description: 'Trace only specific system calls',
+        description: 'Trace only specific system calls'
       }
     ],
     tips: [
@@ -1077,17 +1077,17 @@ export const advancedCommands: Command[] = [
       },
       {
         command: 'lsof -p 1234',
-        description: 'Show files opened by process with PID 1234',
+        description: 'Show files opened by process with PID 1234'
       },
       {
         command: 'lsof /path/to/file',
-        description: 'Show processes that have opened a specific file',
+        description: 'Show processes that have opened a specific file'
       }
     ],
     tips: [
       'Use -i for network connections (e.g., -i:22 for SSH port)',
       'Use -u user to see files opened by a specific user',
-      'Powerful for finding what's keeping a filesystem mounted or a port in use'
+      'Powerful for finding what\'s keeping a filesystem mounted or a port in use'
     ],
     category: 'advanced',
     tags: ['files', 'processes', 'troubleshooting', 'network']
@@ -1100,15 +1100,15 @@ export const advancedCommands: Command[] = [
     examples: [
       {
         command: 'dd if=/dev/zero of=file.img bs=1M count=100',
-        description: 'Create a 100MB file filled with zeros',
+        description: 'Create a 100MB file filled with zeros'
       },
       {
         command: 'dd if=/dev/sda of=/dev/sdb bs=4M',
-        description: 'Clone one disk to another',
+        description: 'Clone one disk to another'
       },
       {
         command: 'dd if=/dev/urandom of=random.dat bs=1M count=1',
-        description: 'Create a file with random data',
+        description: 'Create a file with random data'
       }
     ],
     tips: [
@@ -1132,11 +1132,11 @@ export const advancedCommands: Command[] = [
       },
       {
         command: 'sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT',
-        description: 'Allow incoming SSH connections',
+        description: 'Allow incoming SSH connections'
       },
       {
         command: 'sudo iptables -A INPUT -p tcp --dport 80 -j DROP',
-        description: 'Block incoming HTTP connections',
+        description: 'Block incoming HTTP connections'
       }
     ],
     tips: [
@@ -1156,15 +1156,15 @@ export const advancedCommands: Command[] = [
     examples: [
       {
         command: 'find . -name "*.log" | xargs rm',
-        description: 'Find and remove all .log files',
+        description: 'Find and remove all .log files'
       },
       {
         command: 'cat urls.txt | xargs wget',
-        description: 'Download all URLs listed in a file',
+        description: 'Download all URLs listed in a file'
       },
       {
         command: 'find . -name "*.jpg" | xargs -I{} cp {} /backup/images/',
-        description: 'Find all JPG files and copy them to a backup directory',
+        description: 'Find all JPG files and copy them to a backup directory'
       }
     ],
     tips: [
@@ -1189,7 +1189,7 @@ export const advancedCommands: Command[] = [
       },
       {
         command: 'ls -la | tee output.txt | grep ".txt"',
-        description: 'Save full directory listing while filtering display for text files',
+        description: 'Save full directory listing while filtering display for text files'
       },
       {
         command: 'echo "Appended text" | tee -a file.txt',
@@ -1213,7 +1213,7 @@ export const advancedCommands: Command[] = [
     examples: [
       {
         command: 'screen',
-        description: 'Start a new screen session',
+        description: 'Start a new screen session'
       },
       {
         command: 'screen -ls',
@@ -1222,7 +1222,7 @@ export const advancedCommands: Command[] = [
       },
       {
         command: 'screen -r 12345',
-        description: 'Reattach to a detached screen session',
+        description: 'Reattach to a detached screen session'
       }
     ],
     tips: [
@@ -1242,7 +1242,7 @@ export const advancedCommands: Command[] = [
     examples: [
       {
         command: 'tmux',
-        description: 'Start a new tmux session',
+        description: 'Start a new tmux session'
       },
       {
         command: 'tmux ls',
@@ -1251,7 +1251,7 @@ export const advancedCommands: Command[] = [
       },
       {
         command: 'tmux attach -t 0',
-        description: 'Attach to session number 0',
+        description: 'Attach to session number 0'
       }
     ],
     tips: [
@@ -1277,11 +1277,11 @@ export const advancedCommands: Command[] = [
       },
       {
         command: 'nmap -p 22,80,443 example.com',
-        description: 'Scan specific ports on a host',
+        description: 'Scan specific ports on a host'
       },
       {
         command: 'nmap -sV 192.168.1.10',
-        description: 'Scan for service versions',
+        description: 'Scan for service versions'
       }
     ],
     tips: [
@@ -1301,15 +1301,15 @@ export const advancedCommands: Command[] = [
     examples: [
       {
         command: 'openssl genrsa -out private.key 2048',
-        description: 'Generate a 2048-bit RSA private key',
+        description: 'Generate a 2048-bit RSA private key'
       },
       {
         command: 'openssl req -new -key private.key -out cert.csr',
-        description: 'Create a certificate signing request',
+        description: 'Create a certificate signing request'
       },
       {
         command: 'openssl enc -aes-256-cbc -salt -in file.txt -out file.enc',
-        description: 'Encrypt a file using AES-256-CBC',
+        description: 'Encrypt a file using AES-256-CBC'
       }
     ],
     tips: [
@@ -1329,15 +1329,15 @@ export const advancedCommands: Command[] = [
     examples: [
       {
         command: 'nc -l 1234',
-        description: 'Listen on port 1234',
+        description: 'Listen on port 1234'
       },
       {
         command: 'nc 192.168.1.10 80',
-        description: 'Connect to a server on port 80',
+        description: 'Connect to a server on port 80'
       },
       {
         command: 'nc -l 1234 > received_file.txt',
-        description: 'Receive a file on port 1234 and save it',
+        description: 'Receive a file on port 1234 and save it'
       }
     ],
     tips: [
